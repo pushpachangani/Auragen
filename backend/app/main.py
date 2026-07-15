@@ -1,9 +1,17 @@
 from fastapi import FastAPI
-from app.config import settings
+
+from app.config.settings import settings
+from app.api.routes import (
+    generate,
+    health,
+    score,
+    session,
+    telemetry,
+)
 
 app = FastAPI(
     title=settings.APP_NAME,
-    version=settings.APP_VERSION
+    version=settings.APP_VERSION,
 )
 
 
@@ -15,3 +23,10 @@ def home():
         "version": settings.APP_VERSION,
         "debug": settings.DEBUG,
     }
+
+
+app.include_router(health.router)
+app.include_router(telemetry.router)
+app.include_router(session.router)
+app.include_router(score.router)
+app.include_router(generate.router)
