@@ -1,16 +1,17 @@
 from fastapi import FastAPI
+from app.config import settings
 
 app = FastAPI(
-    title="AuraGen Backend",
-    description="Backend API for AuraGen - Self-Healing Generative UI",
-    version="1.0.0"
+    title=settings.APP_NAME,
+    version=settings.APP_VERSION
 )
 
 
 @app.get("/")
-def root():
+def home():
     return {
-        "project": "AuraGen",
-        "status": "Backend Running Successfully",
-        "version": "1.0.0"
+        "message": "Welcome to AuraGen Backend 🚀",
+        "project": settings.APP_NAME,
+        "version": settings.APP_VERSION,
+        "debug": settings.DEBUG,
     }
