@@ -1,21 +1,16 @@
-const uiPrompt = require("../prompts/uiPrompt");
-
-console.log(uiPrompt);const uiPrompt = require("../prompts/uiPrompt");
+const { buildPrompt } = require("../prompts/uiPrompt");
 
 async function generateUI(userInput) {
 
-    console.log("Prompt:");
-    console.log(uiPrompt);
+    const prompt = buildPrompt(userInput);
 
-    console.log("User Input:");
-    console.log(userInput);
+    console.log("Generated Prompt:");
+    console.log(prompt);
 
     // TODO:
-    // Call LangChain/OpenAI here
+    // LangChain/OpenAI integration
 
-    return "Generated UI";
+    return prompt;
 }
 
-module.exports = {
-    generateUI
-};
+module.exports = { generateUI };
