@@ -1,6 +1,7 @@
 // Dashboard.jsx
 import React, { useState } from 'react';
 import "../styles/dashboard.css";
+import AuraFlowAnimation from "../components/AuraFlowAnimation";
 export default function Dashboard() {
     // =========================================================================
     // FUTURE INTEGRATION PLACEHOLDERS (COMMENTS ONLY)
@@ -80,6 +81,9 @@ export default function Dashboard() {
                     </div>
                 </div>
             </section>
+
+            {/* SECTION 1.5: HOW AURAGEN WORKS (ANIMATED FLOW) */}
+            <AuraFlowAnimation />
 
             {/* SECTION 2: OVERVIEW CARDS */}
             <section className="auragen-section">
@@ -659,4 +663,4 @@ export default function Dashboard() {
 
         </div>
     );
-}  
+}
