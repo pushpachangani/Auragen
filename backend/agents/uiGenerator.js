@@ -1,16 +1,11 @@
-const { buildPrompt } = require("../prompts/uiPrompt");
+const { promptTemplates } = require("../prompts/uiPrompt");
 
-async function generateUI(userInput) {
+function generatePrompt(page, score) {
+    if (page === "dashboard") {
+        return promptTemplates.dashboard(score);
+    }
 
-    const prompt = buildPrompt(userInput);
-
-    console.log("Generated Prompt:");
-    console.log(prompt);
-
-    // TODO:
-    // LangChain/OpenAI integration
-
-    return prompt;
+    return promptTemplates.financialForm(score);
 }
 
-module.exports = { generateUI };
+module.exports = { generatePrompt };

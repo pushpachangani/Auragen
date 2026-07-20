@@ -1,7 +1,3 @@
-const { generateUI } = require("./agents/uiGenerator");
+const { generatePrompt } = require("./agents/uiGenerator");
 
-generateUI({
-    page: "Financial Form",
-    problem: "Too many fields",
-    score: 87
-});
+console.log(generatePrompt("dashboard", 80));
