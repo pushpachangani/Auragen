@@ -1,11 +1,15 @@
-const { promptTemplates } = require("../prompts/uiPrompt");
+const { validateInput } = require("../utils/validator");
+const { buildPrompt } = require("../prompts/uiPrompt");
 
-function generatePrompt(page, score) {
-    if (page === "dashboard") {
-        return promptTemplates.dashboard(score);
-    }
+async function generateUI(userInput) {
 
-    return promptTemplates.financialForm(score);
+    validateInput(userInput);
+
+    const prompt = buildPrompt(userInput);
+
+    console.log(prompt);
+
+    return prompt;
 }
 
-module.exports = { generatePrompt };
+module.exports = { generateUI };

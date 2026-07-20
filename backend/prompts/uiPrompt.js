@@ -1,27 +1,20 @@
-const promptTemplates = {
-    financialForm: (score) => `
+function buildPrompt(userInput) {
+    return `
 You are an expert React developer.
 
-Simplify the financial form.
+Generate a simplified React component.
 
-Cognitive Score: ${score}
+User Context:
+- Page: ${userInput.page}
+- Problem: ${userInput.problem}
+- Cognitive Score: ${userInput.score}
 
-Requirements:
+Rules:
+- Use React JSX
 - Use Tailwind CSS
-- Reduce form complexity
+- Keep the UI simple
 - Return only JSX
-`,
+`;
+}
 
-    dashboard: (score) => `
-Generate a simplified dashboard.
-
-Cognitive Score: ${score}
-
-Requirements:
-- Highlight important information
-- Reduce visual clutter
-- Return only JSX
-`
-};
-
-module.exports = { promptTemplates };
+module.exports = { buildPrompt };
