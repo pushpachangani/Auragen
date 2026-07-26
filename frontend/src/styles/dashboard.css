@@ -1,6 +1,96 @@
 /* dashboard.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
+/* ==========================================================================
+   THEME STYLES (Paste at top of dashboard.css)
+   ========================================================================== */
+:root,
+[data-theme="light"] {
+    --bg-app: #FFFFFF;
+    --bg-card: #F8FAFC;
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+    --border-color: #E2E8F0;
+    --accent-primary: #2563EB;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+    --bg-app: #0F172A;
+    --bg-card: #1E293B;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --border-color: #334155;
+    --accent-primary: #3B82F6;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+body,
+.auragen-dashboard {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dashboard-card,
+.overview-card {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-toggle-btn {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.theme-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.icon-wrapper.is-light .sun-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    color: #F59E0B;
+}
+
+.icon-wrapper.is-light .moon-icon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+.icon-wrapper.is-dark .sun-icon {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+.icon-wrapper.is-dark .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    color: #3B82F6;
+}
+
 /* Variables */
 :root {
     --bg-primary: #F8FAFC;
