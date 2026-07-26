@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.config.settings import settings
 from app.core.exceptions import register_exception_handlers
 from app.api.routes import (
+    dashboard,
     generate,
     health,
     score,
@@ -31,3 +32,4 @@ app.include_router(telemetry.router)
 app.include_router(session.router)
 app.include_router(score.router)
 app.include_router(generate.router)
+app.include_router(dashboard.router)

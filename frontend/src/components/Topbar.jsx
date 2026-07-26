@@ -1,21 +1,20 @@
-import "../styles/components/topbar.css";
+import React from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 function Topbar() {
     return (
         <header className="topbar">
-
-            <div>
-                <h2>AuraGen Dashboard</h2>
+            {/* Keep your existing topbar content here */}
+            <div className="topbar-left">
+                {/* Logo, title, or search bar */}
             </div>
 
-            <div>
-
-                <span>Welcome, Demo User</span>
-
+            <div className="topbar-right">
+                {/* Other header icons/actions */}
+                <ThemeToggle />
             </div>
-
         </header>
     );
 }
 
-export default Topbar;  
+export default Topbar; 

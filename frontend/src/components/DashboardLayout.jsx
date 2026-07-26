@@ -1,5 +1,6 @@
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
+import { ThemeToggle } from "./ThemeToggle";
 import "../styles/components/layout.css";
 
 function DashboardLayout({ children }) {
@@ -18,4 +19,4 @@ function DashboardLayout({ children }) {
     );
 }
 
-export default DashboardLayout;
+export default DashboardLayout; 

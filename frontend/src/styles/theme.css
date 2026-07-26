@@ -1,0 +1,85 @@
+/* ==========================================================================
+   THEME STYLES (Guaranteed Override)
+   ========================================================================== */
+
+/* 1. LIGHT THEME DEFAULTS */
+:root,
+html[data-theme="light"] {
+    --bg-app: #FFFFFF;
+    --bg-card: #F8FAFC;
+    --bg-topbar: #FFFFFF;
+    --bg-sidebar: #F1F5F9;
+
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+
+    --border-color: #E2E8F0;
+    --accent-primary: #2563EB;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* 2. DARK THEME OVERRIDES */
+html[data-theme="dark"] {
+    --bg-app: #0F172A !important;
+    --bg-card: #1E293B !important;
+    --bg-topbar: #111827 !important;
+    --bg-sidebar: #0B0F19 !important;
+
+    --text-primary: #F8FAFC !important;
+    --text-secondary: #94A3B8 !important;
+
+    --border-color: #334155 !important;
+    --accent-primary: #3B82F6 !important;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 3. APPLY VARIABLES DIRECTLY TO WRAPPERS AND CARDS */
+html,
+body,
+#root,
+.layout,
+.main-content,
+.page-content,
+.auragen-dashboard {
+    background-color: var(--bg-app) !important;
+    color: var(--text-primary) !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Topbar & Sidebar Backgrounds */
+.topbar,
+header {
+    background-color: var(--bg-topbar) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.sidebar {
+    background-color: var(--bg-sidebar) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+
+/* Cards & Section Containers */
+.dashboard-card,
+.overview-card,
+.illustration-card,
+.status-banner,
+.workflow-node,
+.blueprint-node {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+/* Headings and Paragraph text inside dark mode */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+    color: inherit;
+}
