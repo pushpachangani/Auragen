@@ -1,3 +1,7 @@
-const { promptConfig } = require("../prompts/promptConfig");
+const { formatResponse } = require("../utils/responseFormatter");
 
-console.log("Prompt Version:", promptConfig.version);
+const formatted = formatResponse(prompt);
+
+console.log(formatted);
+
+return formatted;
