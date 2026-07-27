@@ -1,16 +1,3 @@
-const { validateInput } = require("../utils/validator");
-const { buildPrompt } = require("../prompts/uiPrompt");
+const { promptConfig } = require("../prompts/promptConfig");
 
-async function generateUI(userInput) {
-    validateInput(userInput);
-
-    const prompt = buildPrompt(userInput);
-
-    console.log("========== Generated Prompt ==========");
-    console.log(prompt);
-    console.log("======================================");
-
-    return prompt;
-}
-
-module.exports = { generateUI };
+console.log("Prompt Version:", promptConfig.version);
