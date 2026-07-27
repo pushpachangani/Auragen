@@ -1,16 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import { AuraProvider } from './context/AuraContext';
+import './styles.css';
 
-import App from "./App";
-
-import "./index.css";
-import "./styles/global.css";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AuraProvider>
+        <App />
+      </AuraProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

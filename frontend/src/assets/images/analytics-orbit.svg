@@ -1,0 +1,8 @@
+<svg width="520" height="360" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="90" y1="60" x2="435" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#22D3EE"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/></linearGradient><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="520" height="360" rx="32" fill="#0B1120"/>
+  <g opacity=".24" stroke="#475569"><circle cx="260" cy="180" r="130"/><circle cx="260" cy="180" r="90"/><circle cx="260" cy="180" r="50"/><path d="M60 180H460M260 24V336"/></g>
+  <g stroke="url(#g)" stroke-width="3" fill="none" filter="url(#glow)"><ellipse cx="260" cy="180" rx="178" ry="78" transform="rotate(18 260 180)"/><ellipse cx="260" cy="180" rx="178" ry="78" transform="rotate(-23 260 180)"/><circle cx="260" cy="180" r="48"/></g>
+  <g fill="#F8FAFC" filter="url(#glow)"><circle cx="99" cy="135" r="7"/><circle cx="410" cy="112" r="7"/><circle cx="435" cy="238" r="7"/><circle cx="147" cy="277" r="7"/><circle cx="260" cy="180" r="10"/></g>
+  <text x="260" y="175" fill="#F8FAFC" text-anchor="middle" font-family="Inter,Arial" font-weight="800" font-size="22">AI</text><text x="260" y="201" fill="#A5B4FC" text-anchor="middle" font-family="Inter,Arial" font-size="12">ADAPTATION CORE</text>
+</svg>

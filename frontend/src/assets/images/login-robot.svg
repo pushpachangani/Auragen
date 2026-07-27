@@ -1,0 +1,23 @@
+<svg width="600" height="520" viewBox="0 0 600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="body" x1="180" y1="90" x2="438" y2="442" gradientUnits="userSpaceOnUse"><stop stop-color="#F8FAFC"/><stop offset="1" stop-color="#CBD5E1"/></linearGradient>
+    <linearGradient id="screen" x1="211" y1="158" x2="389" y2="278" gradientUnits="userSpaceOnUse"><stop stop-color="#111827"/><stop offset="1" stop-color="#312E81"/></linearGradient>
+    <linearGradient id="accent" x1="220" y1="180" x2="380" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#22D3EE"/><stop offset=".52" stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="300" cy="448" rx="170" ry="28" fill="#020617" opacity=".45"/>
+  <circle cx="300" cy="252" r="205" fill="#6D28D9" opacity=".12"/>
+  <path d="M183 332C151 338 126 362 124 397C123 421 140 439 166 439H205L213 346L183 332Z" fill="url(#body)"/>
+  <path d="M417 332C449 338 474 362 476 397C477 421 460 439 434 439H395L387 346L417 332Z" fill="url(#body)"/>
+  <rect x="202" y="288" width="196" height="162" rx="68" fill="url(#body)"/>
+  <rect x="170" y="94" width="260" height="230" rx="92" fill="url(#body)"/>
+  <rect x="196" y="128" width="208" height="156" rx="64" fill="url(#screen)"/>
+  <circle cx="255" cy="205" r="15" fill="#67E8F9" filter="url(#glow)"/>
+  <circle cx="345" cy="205" r="15" fill="#C4B5FD" filter="url(#glow)"/>
+  <path d="M260 246C280 260 320 260 340 246" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <rect x="246" y="336" width="108" height="70" rx="24" fill="#111827"/>
+  <path d="M271 372C288 344 312 344 329 372C315 398 285 398 271 372Z" stroke="url(#accent)" stroke-width="5"/>
+  <circle cx="300" cy="372" r="9" fill="#A78BFA" filter="url(#glow)"/>
+  <rect x="136" y="161" width="40" height="100" rx="20" fill="#8B5CF6"/><rect x="424" y="161" width="40" height="100" rx="20" fill="#22D3EE"/>
+  <path d="M300 94V60" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/><circle cx="300" cy="50" r="13" fill="#A78BFA" filter="url(#glow)"/>
+</svg>

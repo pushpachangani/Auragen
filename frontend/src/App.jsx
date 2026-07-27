@@ -1,23 +1,2 @@
-import { Routes, Route } from "react-router-dom";
-
-import DashboardLayout from "./components/DashboardLayout";
-
-import Dashboard from "./pages/Dashboard";
-import FinancialForm from "./pages/FinancialForm";
-import Analytics from "./pages/analytics";
-import Settings from "./pages/settings";
-
-function App() {
-  return (
-    <DashboardLayout>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/financial-form" element={<FinancialForm />} />
-        <Route path="/analytics" element={<Analytics />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
-    </DashboardLayout>
-  );
-}
-
-export default App;
+import {Routes,Route,Navigate} from 'react-router-dom';import Landing from './pages/Landing';import Login from './pages/Login';import Dashboard from './pages/Dashboard';import Monitor from './pages/Monitor';import DynamicUI from './pages/DynamicUI';import Analytics from './pages/Analytics';import Replay from './pages/Replay';import Settings from './pages/Settings';import Profile from './pages/Profile';
+export default function App(){return <Routes><Route path="/" element={<Landing/>}/><Route path="/login" element={<Login/>}/><Route path="/app" element={<Dashboard/>}/><Route path="/app/monitor" element={<Monitor/>}/><Route path="/app/dynamic" element={<DynamicUI/>}/><Route path="/app/analytics" element={<Analytics/>}/><Route path="/app/replay" element={<Replay/>}/><Route path="/app/settings" element={<Settings/>}/><Route path="/app/profile" element={<Profile/>}/><Route path="*" element={<Navigate to="/"/>}/></Routes>}
