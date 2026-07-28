@@ -1,3 +1,8 @@
+/* Top of index.css */
+/* Inside src/index.css */
+@import "./styles/theme.css";
+@import "./styles/global.css";
+
 html,
 body,
 #root {

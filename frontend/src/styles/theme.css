@@ -3,6 +3,47 @@
    ========================================================================== */
 
 /* 1. LIGHT THEME DEFAULTS */
+:root {
+    /* Dynamic AI Background Gradients */
+    --bg-primary: #0a0d14;
+    --bg-secondary: #121824;
+    --bg-gradient: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+        linear-gradient(135deg, #07090e 0%, #0d111a 100%);
+
+    /* Surface / Glassmorphism Elements */
+    --surface: rgba(18, 24, 38, 0.65);
+    --surface-hover: rgba(30, 41, 59, 0.75);
+    --surface-active: rgba(40, 53, 76, 0.85);
+
+    /* Borders & Accents */
+    --border: rgba(255, 255, 255, 0.08);
+    --border-focus: rgba(99, 102, 241, 0.5);
+    --accent-glow: 0 0 20px rgba(99, 102, 241, 0.25);
+
+    /* Typography Colors */
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --text-accent: #818cf8;
+
+    /* Shadows & Depth */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 16px 32px -8px rgba(0, 0, 0, 0.5);
+    --glass-blur: blur(12px);
+
+    /* Status Colors */
+    --status-success: #10b981;
+    --status-warning: #f59e0b;
+    --status-error: #ef4444;
+    --status-info: #3b82f6;
+
+    /* Transitions */
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 :root,
 html[data-theme="light"] {
     --bg-app: #FFFFFF;
