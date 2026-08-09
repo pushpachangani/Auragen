@@ -52,3 +52,12 @@ class GenerationResponse(BaseModel):
     )
     component: GeneratedComponent
     metadata: PromptMetadata
+
+class WizardStep(BaseModel):
+    step: int
+    title: str
+    description: str
+    fields: list[str]
+
+class UISchema(BaseModel):
+    steps: list[WizardStep]

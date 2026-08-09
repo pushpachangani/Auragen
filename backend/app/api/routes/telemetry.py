@@ -13,4 +13,4 @@ async def receive_telemetry(event: TelemetryEvent):
     Receive telemetry data from the frontend.
     """
 
-    return TelemetryService.process_telemetry(event) 
+    return TelemetryService.process_event(event) 

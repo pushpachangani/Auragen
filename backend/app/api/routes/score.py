@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 
-from app.models.cognitive import CognitiveLoadScore
+from app.models.cognitive import CognitiveLoadScore, ScoreCalculationRequest
 from app.services.score_service import ScoreService
 
 router = APIRouter(
@@ -15,7 +15,7 @@ score_service = ScoreService()
     "/",
     response_model=CognitiveLoadScore,
 )
-async def calculate_score(score_data: CognitiveLoadScore):
+async def calculate_score(score_data: ScoreCalculationRequest):
     try:
         result = score_service.calculate_score(
             cursor_speed=score_data.cursor_speed,
