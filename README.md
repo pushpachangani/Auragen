@@ -1,2 +1,0 @@
-# Auragen
-first project

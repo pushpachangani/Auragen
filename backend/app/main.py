@@ -32,4 +32,8 @@ app.include_router(telemetry.router)
 app.include_router(session.router)
 app.include_router(score.router)
 app.include_router(generate.router)
+<<<<<<< HEAD
 app.include_router(dashboard.router)
+=======
+app.include_router(websocket.router)
+>>>>>>> origin/main
