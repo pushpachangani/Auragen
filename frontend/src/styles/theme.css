@@ -22,9 +22,9 @@
     --accent-glow: 0 0 20px rgba(99, 102, 241, 0.25);
 
     /* Typography Colors */
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --text-muted: #64748b;
+    --text-primary: #000204;
+    --text-secondary: #091c37;
+    --text-muted: #173866;
     --text-accent: #818cf8;
 
     /* Shadows & Depth */
