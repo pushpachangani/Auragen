@@ -44,6 +44,20 @@ class CognitiveLoadScore(BaseModel):
         description="Number of rage clicks detected"
     )
 
+class ScoreCalculationRequest(BaseModel):
+    cursor_speed: float = Field(
+        default=0.0,
+        description="Average cursor speed"
+    )
+    hesitation_time: float = Field(
+        default=0.0,
+        description="Average hesitation time in seconds"
+    )
+    rage_clicks: int = Field(
+        default=0,
+        description="Number of rage clicks detected"
+    )
+
 class ScoreSummary(BaseModel):
     session_id: str = Field(
         ...,
