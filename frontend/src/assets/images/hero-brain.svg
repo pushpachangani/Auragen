@@ -1,0 +1,40 @@
+<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(364 278) rotate(90) scale(260 330)">
+      <stop stop-color="#6D28D9" stop-opacity=".34"/>
+      <stop offset=".55" stop-color="#172554" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="165" y1="105" x2="565" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset=".5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="720" height="560" rx="42" fill="url(#bg)"/>
+  <g opacity=".25" stroke="#475569">
+    <path d="M80 92H640M80 166H640M80 240H640M80 314H640M80 388H640M80 462H640"/>
+    <path d="M118 60V500M216 60V500M314 60V500M412 60V500M510 60V500M608 60V500"/>
+  </g>
+  <g stroke="url(#line)" stroke-width="3" stroke-linecap="round" filter="url(#glow)">
+    <path d="M360 139C312 91 225 111 207 177C171 190 150 223 157 259C122 291 132 352 181 369C191 425 249 452 297 422C322 457 382 462 411 421C459 449 516 420 520 370C570 346 576 284 535 255C545 208 507 167 461 169C443 116 388 101 360 139Z"/>
+    <path d="M357 145V416" opacity=".75"/>
+    <path d="M358 194C313 178 275 200 258 236M359 240C312 230 279 255 269 294M359 296C309 291 276 318 267 356M359 348C320 355 302 379 299 418" opacity=".8"/>
+    <path d="M360 190C408 174 449 202 460 239M360 243C409 230 446 260 454 299M360 298C411 289 446 318 454 358M360 350C402 355 422 384 420 419" opacity=".8"/>
+  </g>
+  <g fill="#F8FAFC" filter="url(#glow)">
+    <circle cx="207" cy="177" r="6"/><circle cx="157" cy="259" r="6"/><circle cx="181" cy="369" r="6"/>
+    <circle cx="297" cy="422" r="6"/><circle cx="461" cy="169" r="6"/><circle cx="535" cy="255" r="6"/>
+    <circle cx="520" cy="370" r="6"/><circle cx="411" cy="421" r="6"/><circle cx="360" cy="240" r="7"/>
+  </g>
+  <g font-family="Inter, Arial" font-size="15" font-weight="700">
+    <g><rect x="56" y="108" width="110" height="40" rx="20" fill="#101625" stroke="#334155"/><text x="111" y="133" fill="#BAE6FD" text-anchor="middle">OBSERVE</text></g>
+    <g><rect x="550" y="113" width="116" height="40" rx="20" fill="#101625" stroke="#334155"/><text x="608" y="138" fill="#DDD6FE" text-anchor="middle">UNDERSTAND</text></g>
+    <g><rect x="62" y="411" width="104" height="40" rx="20" fill="#101625" stroke="#334155"/><text x="114" y="436" fill="#FBCFE8" text-anchor="middle">ADAPT</text></g>
+    <g><rect x="547" y="414" width="102" height="40" rx="20" fill="#101625" stroke="#334155"/><text x="598" y="439" fill="#A7F3D0" text-anchor="middle">IMPROVE</text></g>
+  </g>
+</svg>
